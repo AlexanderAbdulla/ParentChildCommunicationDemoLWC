@@ -1,8 +1,9 @@
 <template>
-    <lightning-card title="Child Component">        
-        <p class="slds-p-horizontal_small">Parent Clicks: {parentToChildClicks}</p>
-        <div class="slds-p-horizontal_small">
-            <lightning-button label="neutral" onclick={handleChildToParentClick}>Click For Child</lightning-button>
+        <div class="slds-box slds-m-top_small">
+            <b> Child Component</b>      
+            <p class="slds-p-horizontal_small">Parent Clicks: {parentToChildClicks}</p>
+            <div class="slds-p-horizontal_small">
+                <lightning-button label="Click For Parent" onclick={handleChildToParentClick}>Click For Parent</lightning-button>
+            </div>
         </div>
-    </lightning-card>
 </template>

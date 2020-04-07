@@ -10,5 +10,7 @@ export default class ChildComponent extends LightningElement {
 
     handleChildToParentClick() {
         console.log('initiating child to parent comm');
+        const childToParentClickEvent = new CustomEvent("handlechildclick");
+        this.dispatchEvent(childToParentClickEvent);
     }
 }
